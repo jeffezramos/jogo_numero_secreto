@@ -7,6 +7,31 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <main class="container">
+      <h1>Jogo do Número Secreto 🔢</h1>
+
+      <p id="mensagem-inicial">
+        Bem-vindo! Tente adivinhar o número entre 1 e 10. <br />
+        Você tem 3 tentativas. Boa sorte! 🚀
+      </p>
+
+      <div class="input-area">
+        <label for="chuteInput">Digite o seu chute:</label>
+        <input
+          type="number"
+          id="chuteInput"
+          min="1"
+          max="10"
+          placeholder="1 a 10"
+        />
+        <button id="chutarBtn">Chutar!</button>
+      </div>
+
+      <p id="feedback"></p>
+
+      <button id="resetBtn" class="hidden">Jogar Novamente</button>
+    </main>
+
     <script src="script.js"></script>
   </body>
 </html>

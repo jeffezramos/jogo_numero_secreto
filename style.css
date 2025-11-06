@@ -1,0 +1,85 @@
+/* Estilos gerais */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* O container principal do jogo */
+.container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  color: #1a73e8;
+  margin-top: 0;
+}
+
+/* Área de input e botão */
+.input-area {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Estilo do campo de input */
+input[type="number"] {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Estilo do botão principal */
+button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1a73e8; /* Azul */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #1558b0;
+}
+
+/* Estilo do botão de reiniciar */
+#resetBtn {
+  background-color: #34a853; /* Verde */
+  margin-top: 1rem;
+}
+
+#resetBtn:hover {
+  background-color: #2a8c44;
+}
+
+/* Parágrafo de feedback */
+#feedback {
+  font-size: 1.1rem;
+  font-weight: 500;
+  min-height: 1.5rem; /* Garante espaço mesmo quando vazio */
+  margin-top: 1.5rem;
+}
+
+/* Classe utilitária para esconder elementos */
+.hidden {
+  display: none;
+}
